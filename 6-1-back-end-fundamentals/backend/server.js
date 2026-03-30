@@ -1,16 +1,25 @@
 // TODO 1: Import Express
 
 
-
 // TODO 2: Create the Express app and store it in a variable named app
-
+const app = express();
 
 
 // TODO 3: Allow React to access the server
+app.use((req, res, next) => {
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
+  res.setHeader("Access-Control-Allow-Headers", "Content-Type");
+  next();
+}); 
+
+
+
 
 
 
 // TODO 5: Create the home route "/"
+
 
 
 
