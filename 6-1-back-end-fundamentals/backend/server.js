@@ -22,16 +22,15 @@ app.get("/about", (req, res) => {
 
 // TODO 7: Create the "/student" route
 app.get("/student", (req, res) => {
-  const student = {
-    name: "Forkan",
-    age: 22,
-    major: "SWE"
-  };
-  res.json(student);
+    res.json({
+        name: "Forkan",
+        age: 22,
+        major: "SWE"
+    });
 });
 
-
 // TODO 4: Start the server on port 3000
+
 app.listen(3000, () => {
   console.log("Server is running on port 3000");
 });
