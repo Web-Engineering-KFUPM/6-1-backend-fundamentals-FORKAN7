@@ -33,6 +33,14 @@ app.get("/about", (req, res) => {
 });
 
 // TODO 7: Create the "/student" route
+app.get("/student", (req, res) => {
+  const student = {
+    name: "John Doe",
+    age: 20,
+    major: "Computer Science"
+  };
+  res.json(student);
+});
 
 
 // TODO 4: Start the server on port 3000
