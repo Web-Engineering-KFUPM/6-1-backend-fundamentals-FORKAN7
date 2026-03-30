@@ -19,6 +19,10 @@ app.use((req, res, next) => {
 
 
 // TODO 5: Create the home route "/"
+app.get("/", (req, res) => {
+  res.send("Welcome to the home page!");
+});
+
 
 
 
@@ -26,9 +30,8 @@ app.use((req, res, next) => {
 // TODO 6: Create the "/about" route
 
 
-
 // TODO 7: Create the "/student" route
 
 
-
 // TODO 4: Start the server on port 3000
+
